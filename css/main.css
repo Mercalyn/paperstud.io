@@ -1,0 +1,195 @@
+body{
+    background-color: #333;
+
+}
+
+h2{
+    font-size: 30px;
+    margin: 0px;
+    margin-left: 7px;
+    cursor: default;
+}
+
+h3{
+    margin: 0px;
+    padding-top: 2px;
+    color: white;
+}
+
+h4{
+    margin: 0px 3px;
+}
+
+h2,h3,h4{
+    font-family: "Trebuchet MS";
+}
+
+#navtimeline{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+    background-color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 2px solid black;
+}
+
+nav{
+    display: flex;
+}
+
+#charlist{
+    height:900px;
+}
+
+#charpanelnavtop,#charpanelnavmid{
+    padding-top: 4px;
+    background-color: white;
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+
+#charpanelnavtop{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#charpanelnavmid{
+    border-top: 2px solid black;
+}
+
+.fa-h2{
+    font-size: 30px;
+    margin-left: 7px;
+    margin-top: 2px;
+}
+
+.fa-info{
+    color: #ff9900;
+}
+
+.fa-button{
+    color: rgb(51,102,153);;
+    cursor: pointer;
+}
+
+.fa-button:hover{
+    color: rgb(81,152,193);;
+    cursor: pointer;
+}
+
+#mainpage{
+    margin: auto;
+    width: 2226px;
+}
+
+.white{
+    background-color: #ddd;
+}
+
+.container{
+    position: relative;
+}
+
+.border{
+    border: 1px solid #000;
+}
+
+.corner{
+    border-radius: 4px;
+}
+
+#tophalf{
+    top: 0px;
+    display: flex;
+}
+
+#characterpanel{
+    height: 1116px;
+    width: 300px;
+}
+
+#canvasrender{
+    height: 1080px;
+    width: 1920px;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+#righthalf{
+    margin-left: 4px;
+}
+
+#renderbuttons{
+    height: 30px;
+    margin-bottom: 4px;
+    justify-content: space-between;
+}
+
+.renderbuttonclass{
+    border: 1px solid black;
+    padding: 0px 100px;
+    height: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#burnbutton{
+    background-color: rgb(51,51,51);
+}
+
+#burnbutton:hover{
+    background-color: rgb(81,81,81);
+}
+
+#scrubbutton,#actualrenderbutton{
+    background-color: rgb(204,0,51);
+}
+
+#scrubbutton:hover,#actualrenderbutton:hover{
+    background-color: rgb(234,50,81);
+}
+
+#debugbutton,#hotkeybutton,#charbuilderbutton{
+    background-color: rgb(51,102,153);
+}
+
+#debugbutton:hover,#hotkeybutton:hover,#charbuilderbutton:hover{
+    background-color: rgb(81,152,193);
+}
+
+#charbuilderbutton{
+    margin-left: -2px;
+}
+
+#actualrenderbutton{
+    margin-right: -2px;
+}
+
+#timeline{
+    height: 150px;
+    width: 2224px;
+}
+
+#timelinebg{
+    background-image: url("../img/timeline.png");
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-left: 31px;
+    margin-top: 5px;
+}
+
+#timelinecursor{
+    background-image: url("../img/timelinecursor.png");
+    background-repeat: no-repeat;
+    height: 85px;
+    margin-top: -104px;
+    margin-left: 9px;
+}
+
+#frameoutnumber{
+    font-family: consolas;
+    padding-left: 5px;
+    padding-top: 63px;
+}

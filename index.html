@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PaperStud.io</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+    <section id="mainpage">
+        <!-----------------------Top half------------------------->
+        <header class="container" id="tophalf">
+            <!------------Left half / Characters--------->
+            <section class="border corner white" id="characterpanel">
+                <nav id="charpanelnavtop">
+                    <i class="fas fa-user-circle fa-h2 fa-info"></i>
+                    <h2>CHAR PANEL</h2>
+                    <i class="fas fa-plus-square fa-h2 fa-button" id="addcharacterbutton"></i>
+                    <i class="fas fa-minus-square fa-h2 fa-button" id="removecharacterbutton"></i>
+                </nav>
+                <aside id="charlist">
+                </aside>
+                <nav id="charpanelnavmid">
+                    <i class="fas fa-leaf fa-h2 fa-info"></i>
+                    <h2 style="padding-right: 44px;">SCENERY</h2>
+                    <i class="fas fa-save fa-h2 fa-button"></i>
+                    <i class="fas fa-download fa-h2 fa-button" style="font-size: 28px;"></i>
+                </nav>
+                <aside id="scenerylist">
+                </aside>
+            </section>
+            <!-------------Right half / Preview---------->
+            <section id="righthalf">
+                <canvas class="border" id="canvasrender">
+
+                </canvas>
+                
+                
+                <nav class="border corner white" id="renderbuttons">
+                    <article class="renderbuttonclass" id="charbuilderbutton">
+                        <h3>CHAR BUILDER</h3>
+                    </article>
+                    <article class="renderbuttonclass" id="scrubbutton">
+                        <h3>SCRUB-PLAY</h3>
+                    </article>
+                    <article class="renderbuttonclass" id="burnbutton">
+                        <h3>BURN-IN</h3>
+                    </article>
+                    <article class="renderbuttonclass" id="hotkeybutton">
+                        <h3>KEY BINDINGS</h3>
+                    </article>
+                    <article class="renderbuttonclass" id="debugbutton">
+                        <h3>DEBUG</h3>
+                    </article>
+                    <article class="renderbuttonclass" id="actualrenderbutton">
+                        <h3>RENDER</h3>
+                    </article>
+                </nav>
+            </section>
+        </header>
+        <!-----------------Bottom half / Timeline------------------->
+        <footer class="container border corner white" id="timeline">
+            <nav id="navtimeline">
+                <article>
+                    <h4>Render: 1920x1080@24fps</h4>
+                </article>
+                <article style="display:flex;">
+                    <i class="fas fa-map-marked fa-h2 fa-info"></i>
+                    <h2>TIMELINE</h2>
+                </article>
+                <article>
+                    <h4>Limit: 1440frames / 60sec</h4>
+                </article>
+            </nav>
+            <!------------actual timeline graphic-------------->
+            <article id="timelinebg"></article>
+            <article id="timelinecursor">
+                <p id="frameoutnumber">
+                    0000
+                </p>
+            </article>
+        </footer>
+    </section>
+</body>
+</html>
