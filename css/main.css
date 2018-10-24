@@ -3,6 +3,11 @@ body{
 
 }
 
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+
 h2{
     font-size: 30px;
     margin: 0px;
@@ -40,7 +45,7 @@ nav{
 }
 
 #charlist{
-    height:900px;
+    height:947px;
 }
 
 #charpanelnavtop,#charpanelnavmid{
@@ -69,13 +74,23 @@ nav{
     color: #ff9900;
 }
 
+.fa-scenery{
+    color: rgb(255,255,255);
+    margin-top: 4px;
+}
+
+.fa-scenery:hover{
+    color: rgb(77, 223, 79);
+    cursor: pointer;
+}
+
 .fa-button{
-    color: rgb(51,102,153);;
+    color: rgb(51,102,153);
     cursor: pointer;
 }
 
 .fa-button:hover{
-    color: rgb(81,152,193);;
+    color: rgb(81,152,193);
     cursor: pointer;
 }
 
@@ -170,6 +185,7 @@ nav{
 #timeline{
     height: 150px;
     width: 2224px;
+    user-select: none;
 }
 
 #timelinebg{
@@ -192,4 +208,56 @@ nav{
     font-family: consolas;
     padding-left: 5px;
     padding-top: 63px;
+}
+
+.nav-list{
+    color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: -1px;
+    list-style-type: none;
+    height: 40px;
+    background-color: #009900;
+    display: flex;
+}
+
+h4.nav-text{
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: default;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#popup-window{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -600px;
+    margin-top: -600px;
+    width: 1200px;
+    height: 800px;
+}
+
+#popup-window-backer{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#hotkey-pop{
+    background-image: url(../img/hotkeys.png);
+}
+
+.popup-hide-class{
+    position: relative;
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
 }

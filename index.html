@@ -23,6 +23,8 @@
                     <i class="fas fa-minus-square fa-h2 fa-button" id="removecharacterbutton"></i>
                 </nav>
                 <aside id="charlist">
+                    <ul id="charlistul">
+                    </ul>
                 </aside>
                 <nav id="charpanelnavmid">
                     <i class="fas fa-leaf fa-h2 fa-info"></i>
@@ -31,6 +33,16 @@
                     <i class="fas fa-download fa-h2 fa-button" style="font-size: 28px;"></i>
                 </nav>
                 <aside id="scenerylist">
+                    <ul id="sceneryul">
+                        <li class="nav-list">
+                            <h4 class="nav-text">Slide-bg</h4>
+                            <i class="fas fa-info-circle fa-h2 fa-scenery" id="addsceneryslide"></i>
+                        </li>
+                        <li class="nav-list">
+                            <h4 class="nav-text">Main-bg</h4>
+                            <i class="fas fa-info-circle fa-h2 fa-scenery" id="addscenerymain"></i>
+                        </li>
+                    </ul>
                 </aside>
             </section>
             <!-------------Right half / Preview---------->
@@ -85,5 +97,32 @@
             </article>
         </footer>
     </section>
+    
+    <!-----------------------Popup window backer------------------------->
+    <article id="popup-window-backer"></article>
+    
+    <!-----------------------Pop up window------------------------->
+    <article id="popup-window">
+        <section class="popup-hide-class" id="hotkey-pop">
+        </section>
+        <section class="popup-hide-class" id="charbuilder-pop">
+            charbuilder
+        </section>
+        <section class="popup-hide-class" id="debug-pop">
+            debug
+        </section>
+        <section class="popup-hide-class" id="render-pop">
+            render
+        </section>
+        <section class="popup-hide-class" id="slide-bg-pop">
+            slide-bg
+        </section>
+        <section class="popup-hide-class" id="main-bg-pop">
+            main-bg
+        </section>
+        <section class="popup-hide-class" id="charpanel-pop">
+            charpanel
+        </section>
+    </article>
 </body>
 </html>

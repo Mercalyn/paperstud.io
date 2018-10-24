@@ -5,4 +5,4 @@ major markers 10 secs/240 frames/360 pixels
 
 minor 1 sec marker/24 frames/36 pixels
 
-62 ish pixels too many??
+62 ish pixels too many?? --fixed
