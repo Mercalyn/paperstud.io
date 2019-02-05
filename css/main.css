@@ -44,18 +44,11 @@ nav{
     display: flex;
 }
 
-#charlist{
-    height:947px;
-}
-
-#charpanelnavtop,#charpanelnavmid{
+.layertop{
     padding-top: 4px;
     background-color: white;
     padding-bottom: 2px;
     border-bottom: 2px solid black;
-}
-
-#charpanelnavtop{
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
@@ -68,6 +61,10 @@ nav{
     font-size: 30px;
     margin-left: 7px;
     margin-top: 2px;
+}
+
+.fa-h5{
+    font-size: 80px;
 }
 
 .fa-info{
@@ -94,13 +91,30 @@ nav{
     cursor: pointer;
 }
 
+#leftnavpanel{
+    position: absolute;
+    left: -89px;
+    width: 80px;
+    height: 280px;
+    top: 1px;
+}
+
 #mainpage{
     margin: auto;
     width: 2226px;
 }
 
+.offwhite{
+    background-color: #888;
+}
+
 .white{
-    background-color: #ddd;
+    background-color: #fff;
+}
+
+.layerpanel{
+    color: deepskyblue;
+    margin-bottom: 20px;
 }
 
 .container{
@@ -120,7 +134,7 @@ nav{
     display: flex;
 }
 
-#characterpanel{
+.hidepanel{
     height: 1116px;
     width: 300px;
 }
@@ -166,11 +180,11 @@ nav{
     background-color: rgb(234,50,81);
 }
 
-#debugbutton,#hotkeybutton,#charbuilderbutton{
+#scenebbutton,#hotkeybutton,#charbuilderbutton{
     background-color: rgb(51,102,153);
 }
 
-#debugbutton:hover,#hotkeybutton:hover,#charbuilderbutton:hover{
+#scenebbutton:hover,#hotkeybutton:hover,#charbuilderbutton:hover{
     background-color: rgb(81,152,193);
 }
 

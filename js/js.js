@@ -11,6 +11,9 @@ $(document).ready(function(){
     
     //popup buttons make the popup window.. well... POP UP! *imagine that*
     popup_buttons();
+    
+    //ini panel buttons
+    panel_buttons();
 })
 
 function pos_timeline(){
@@ -70,7 +73,7 @@ function popup_buttons(){
     });
     
     //click on debug
-    $("#debugbutton").click(function(){
+    $("#scenebbutton").click(function(){
         popup_buttons_load("#debug-pop");
     });
     
@@ -105,4 +108,31 @@ function popup_buttons_load(fileToLoad){
     
     //show the specific section
     $(fileToLoad).show();
+}
+
+function panel_load(panelToLoad){
+    //hide all layers/panels with class
+    $(".hidepanel").hide();
+    
+    //show the specific section
+    $(panelToLoad).show();
+}
+
+function panel_buttons(){
+    panel_load("#characterpanel");
+    
+    //click on char button
+    $("#characterpanelbutton").click(function(){
+        panel_load("#characterpanel");
+    });
+    
+    //click on char button
+    $("#backproppanelbutton").click(function(){
+        panel_load("#backproppanel");
+    });
+    
+    //click on char button
+    $("#ambiencepanelbutton").click(function(){
+        panel_load("#ambiencepanel");
+    });
 }

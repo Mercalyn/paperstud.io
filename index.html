@@ -5,43 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>PaperStud.io</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script type="text/javascript" src="js/js.js"></script>
 </head>
 <body>
     <section id="mainpage">
         <!-----------------------Top half------------------------->
         <header class="container" id="tophalf">
-            <!------------Left half / Characters--------->
-            <section class="border corner white" id="characterpanel">
-                <nav id="charpanelnavtop">
-                    <i class="fas fa-user-circle fa-h2 fa-info"></i>
-                    <h2>CHAR PANEL</h2>
+            <!------------Left of article / Left Nav Panel--------->
+            <section id="leftnavpanel">
+                <nav id="ambiencepanelbutton">
+                    <i class="fas fa-cloud-moon-rain layerpanel" style="font-size: 70px;"></i>
+                </nav>
+                <nav id="backproppanelbutton">
+                    <i class="fas fa-coffee layerpanel" style="font-size: 63px;"></i>
+                </nav>
+                <nav id="characterpanelbutton">
+                    <i class="fas fa-crown layerpanel" style="font-size: 63px;"></i>
+                </nav>
+            </section>
+            
+            <!------------Left half / Layers--------->
+            <!--characterpanel-->
+            <section class="border corner offwhite hidepanel" id="characterpanel">
+                <nav id="charpanelnavtop" class="layertop">
+                    <i class="fas fa-crown fa-h2"></i>
+                    <h2>MAIN ACTORS</h2>
                     <i class="fas fa-plus-square fa-h2 fa-button" id="addcharacterbutton"></i>
-                    <i class="fas fa-minus-square fa-h2 fa-button" id="removecharacterbutton"></i>
                 </nav>
                 <aside id="charlist">
                     <ul id="charlistul">
                     </ul>
                 </aside>
-                <nav id="charpanelnavmid">
-                    <i class="fas fa-leaf fa-h2 fa-info"></i>
-                    <h2 style="padding-right: 44px;">SCENERY</h2>
-                    <i class="fas fa-save fa-h2 fa-button"></i>
-                    <i class="fas fa-download fa-h2 fa-button" style="font-size: 28px;"></i>
+            </section>
+            <!--backproppanel-->
+            <section class="border corner offwhite hidepanel" id="backproppanel">
+                <nav id="backproppanelnavtop" class="layertop">
+                    <i class="fas fa-coffee fa-h2"></i>
+                    <h2>BACKPROPS</h2>
+                    <i class="fas fa-plus-square fa-h2 fa-button" id="addbackpropbutton"></i>
                 </nav>
-                <aside id="scenerylist">
-                    <ul id="sceneryul">
-                        <li class="nav-list">
-                            <h4 class="nav-text">Slide-bg</h4>
-                            <i class="fas fa-info-circle fa-h2 fa-scenery" id="addsceneryslide"></i>
-                        </li>
-                        <li class="nav-list">
-                            <h4 class="nav-text">Main-bg</h4>
-                            <i class="fas fa-info-circle fa-h2 fa-scenery" id="addscenerymain"></i>
-                        </li>
+                <aside id="proplist">
+                    <ul id="proplistul">
+                    </ul>
+                </aside>
+            </section>
+            <!--ambiencepanel-->
+            <section class="border corner offwhite hidepanel" id="ambiencepanel">
+                <nav id="ambiencepanelnavtop" class="layertop">
+                    <i class="fas fa-cloud-moon-rain fa-h2"></i>
+                    <h2>AMBIENCE</h2>
+                    <i class="fas fa-plus-square fa-h2 fa-button" id="addambiencebutton"></i>
+                </nav>
+                <aside id="ambiencelist">
+                    <ul id="ambiencelistul">
                     </ul>
                 </aside>
             </section>
@@ -52,9 +71,12 @@
                 </canvas>
                 
                 
-                <nav class="border corner white" id="renderbuttons">
+                <nav class="border corner offwhite" id="renderbuttons">
                     <article class="renderbuttonclass" id="charbuilderbutton">
                         <h3>CHAR BUILDER</h3>
+                    </article>
+                    <article class="renderbuttonclass" id="scenebbutton">
+                        <h3>SCENE BUILDER</h3>
                     </article>
                     <article class="renderbuttonclass" id="scrubbutton">
                         <h3>SCRUB-PLAY</h3>
@@ -65,9 +87,6 @@
                     <article class="renderbuttonclass" id="hotkeybutton">
                         <h3>KEY BINDINGS</h3>
                     </article>
-                    <article class="renderbuttonclass" id="debugbutton">
-                        <h3>DEBUG</h3>
-                    </article>
                     <article class="renderbuttonclass" id="actualrenderbutton">
                         <h3>RENDER</h3>
                     </article>
@@ -75,7 +94,7 @@
             </section>
         </header>
         <!-----------------Bottom half / Timeline------------------->
-        <footer class="container border corner white" id="timeline">
+        <footer class="container border corner offwhite" id="timeline">
             <nav id="navtimeline">
                 <article>
                     <h4>Render: 1920x1080@24fps</h4>
@@ -109,7 +128,7 @@
             charbuilder
         </section>
         <section class="popup-hide-class" id="debug-pop">
-            debug
+            scene builder
         </section>
         <section class="popup-hide-class" id="render-pop">
             render
